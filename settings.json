@@ -1,0 +1,144 @@
+// Setting json Vscode of Dunlok
+{
+  // Editor settings
+  "editor.tabCompletion": "on",
+  "editor.renderLineHighlight": "all",
+  "editor.rulers": [
+    100
+  ],
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 17,
+  "editor.letterSpacing": 0.5,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.renderWhitespace": "all",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.accessibilitySupport": "off",
+  "editor.inlineSuggest.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.autoClosingQuotes": "beforeWhitespace",
+  "editor.smoothScrolling": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.codeActionsOnSave": {
+    // remove unused imports on save
+    "source.organizeImports": true,
+    // format on save
+    "source.fixAll": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // File settings
+  "files.trimTrailingWhitespace": true,
+  // Terminal settings
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 3,
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.enablePreview": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  // IntelliSense Settings
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // Git settings
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  // Launch settings
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  // Markdown settings
+  "markdown.preview.fontSize": 16,
+  "markdown.preview.typographer": true,
+  // EXTENSION SETTINGS
+  // ESLint settings
+  "eslint.alwaysShowStatus": true,
+  // Live server settings
+  "liveServer.settings.donotShowInfoMsg": true,
+  // Fig settings
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  // Error lens settings
+  "errorLens.enabled": true,
+  // Emmet settings
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // to do-tree extension settings
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "MAYBE"
+  ],
+  "todo-tree.highlights.highlightDelay": 300,
+  "todo-tree.highlights.useColourScheme": true,
+  // smaller hint at wrong spelling and takes spelling mistakes out of the Problems panel.
+  "cSpell.diagnosticLevel": "Hint",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "workbench.productIconTheme": "bootstrap-product-icons",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "editor.cursorBlinking": "phase",
+  "editor.lineNumbers": "relative",
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "python.formatting.provider": "none",
+  "security.workspace.trust.enabled": false,
+  "terminal.integrated.fontFamily": "'MesloLGM NF'",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "vim.easymotion": true,
+  "vim.leader": " ",
+  "vim.highlightedyank.enable": true,
+  "vim.vimrc.path": "C:/Users/myloc/vscode.vimrc",
+  "vim.vimrc.enable": true,
+  "php.validate.enable": true,
+  "php.validate.executablePath": "c:\\xampp\\php\\php.exe",
+  "php.suggest.basic": false,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 100,
+  "editor.minimap.enabled": false
+}
