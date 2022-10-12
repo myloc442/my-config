@@ -36,11 +36,9 @@ inoremap <C-k> <Esc>:m -2<CR>gi
 " scrolling
 nmap <leader>d <C-d>
 nmap <leader>u <C-u>
-vmap <leader>d <C-d>
-vmap <leader>u <C-u>
 
 " Add new line
-nmap <S-Enter> O<Esc>
+nmap \ O<Esc>
 nmap <CR> o<Esc>
 nnoremap <Leader>o o<Esc>
 nnoremap <Leader>O O<Esc>

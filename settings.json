@@ -3,24 +3,40 @@
   // Editor settings
   "editor.tabCompletion": "on",
   "editor.renderLineHighlight": "all",
-  "editor.rulers": [
-    100
-  ],
+  "editor.rulers": [100],
   "editor.fontFamily": "JetBrains Mono",
-  "editor.fontSize": 17,
-  "editor.letterSpacing": 0.5,
+  // "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  // "editor.fontFamily": "Fira Code Retina",
+  "editor.fontSize": 18,
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
   "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlineSuggest.enabled": true,
   "editor.formatOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.alwaysShowStatus": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.wordWrapColumn": 100,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.accessibilitySupport": "off",
-  "editor.inlineSuggest.enabled": true,
   "editor.linkedEditing": true,
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.smoothScrolling": true,
@@ -50,8 +66,6 @@
   "workbench.list.smoothScrolling": true,
   "workbench.editor.enablePreview": false,
   "security.workspace.trust.untrustedFiles": "open",
-  // IntelliSense Settings
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   // Git settings
   "git.enableSmartCommit": true,
   "git.autofetch": true,
@@ -66,7 +80,6 @@
   "markdown.preview.typographer": true,
   // EXTENSION SETTINGS
   // ESLint settings
-  "eslint.alwaysShowStatus": true,
   // Live server settings
   "liveServer.settings.donotShowInfoMsg": true,
   // Fig settings
@@ -76,9 +89,6 @@
   // Error lens settings
   "errorLens.enabled": true,
   // Emmet settings
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
   // to do-tree extension settings
   "todo-tree.general.tags": [
     "BUG",
@@ -94,9 +104,6 @@
   "todo-tree.highlights.useColourScheme": true,
   // smaller hint at wrong spelling and takes spelling mistakes out of the Problems panel.
   "cSpell.diagnosticLevel": "Hint",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   // "workbench.productIconTheme": "bootstrap-product-icons",
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
@@ -115,7 +122,7 @@
       "source": "Git Bash"
     }
   },
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "editor.cursorBlinking": "phase",
   "editor.lineNumbers": "relative",
   "[python]": {
@@ -123,22 +130,62 @@
     "editor.tabSize": 2,
     "editor.defaultFormatter": "ms-python.python"
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "python.formatting.provider": "none",
   "security.workspace.trust.enabled": false,
-  "terminal.integrated.fontFamily": "'MesloLGM NF'",
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "vim.easymotion": true,
-  "vim.leader": " ",
-  "vim.highlightedyank.enable": true,
-  "vim.vimrc.path": "C:/Users/myloc/vscode.vimrc",
-  "vim.vimrc.enable": true,
   "php.validate.enable": true,
   "php.validate.executablePath": "c:\\xampp\\php\\php.exe",
   "php.suggest.basic": false,
   "editor.wordWrap": "on",
-  "editor.wordWrapColumn": 100,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "One Dark Pro Darker",
+
+  // VIM CUSTOM MAP KEY
+  "vim.easymotion": true,
+  "vim.leader": "<space>",
+  "vim.highlightedyank.enable": true,
+  "vim.vimrc.path": "C:/Users/myloc/vscode.vimrc",
+  "vim.vimrc.enable": true,
+  "vim.handleKeys": {
+    "C-b": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Enter>"],
+      "commands": ["editor.action.insertLineAfter"]
+    },
+    {
+      "before": ["\\"],
+      "commands": ["editor.action.insertLineBefore"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    }, // moveLineDown
+    {
+      "before": ["<C-k>"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    } // moveLineUp
+  ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-j>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    }, // moveLineDown
+    {
+      "before": ["<C-k>"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    } // moveLineUp
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<C-j>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    }, // moveLineDown
+    {
+      "before": ["<C-k>"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    } // moveLineUp
+  ],
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  }
 }

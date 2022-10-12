@@ -1,10 +1,11 @@
+set clipboard+=unnamedplus  " use the clipboards of vim and win
+set paste               " Paste from a windows or from vim
+set go+=a               " Visual selection automatically copied to the clipboard
 nnoremap <C-a> ggVG
-inoremap <Up> <NOP>
-inoremap <Down> <NOP>
-inoremap <Left> <NOP>
-inoremap <Right> <NOP>
-noremap <Up> <NOP>
-noremap <Down> <NOP>
+
+" Next tab
+nnoremap <leader>h gT
+nnoremap <leader>l gt
 
 " Tab block code
 vnoremap > >gv
@@ -22,9 +23,8 @@ vmap <leader>P "+P
 " scrolling
 nmap <leader>d <C-d>
 nmap <leader>u <C-u>
-vmap <leader>d <C-d>
-vmap <leader>u <C-u>
 
 " Add new line
 nnoremap <Leader>o o<Esc>
 nnoremap <Leader>O O<Esc>
+
